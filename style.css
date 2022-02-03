@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Supermercado+One&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Comforter', cursive;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23393939' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /* background-color: rgba(255,255 , 255, 0.5); */
+    color: rgb(7, 7, 146);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 8px;
+    font-size: 40px;
+}
+
+p{
+    font-weight: 300;
+    text-align:  center;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/* Loader */
+.loader{
+    position: fixed;
+    background-color: rgba(255,255 , 255, 0.4);
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+
+/* 第一種置中方式 */
+/* .loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* 第二種置中方式 */
+.loader img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* image */
+.image-container{
+    margin: 20px 20%;
+}
+
+.image-container img{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+/* Smartphone or tablet */
+@media screen and (max-width:600px) {
+    .image-container{
+        margin:10px 10%;
+    }
+}
