@@ -17,6 +17,7 @@ function imgloaded(){
     if(photoCnt === apiPhotocount){
         boolLoaded = true;
         photoCnt = 0;
+        loader.setAttribute('hidden',true);
     }
 }
 
@@ -63,7 +64,6 @@ function getPhotos(){
         Response.json().then( photoresponse => {
             PhotosArray = photoresponse;
             displayPhotos();
-            loader.setAttribute('hidden',true);
         }).catch(err=>{
             console.log('something wrong!', err);
         })
